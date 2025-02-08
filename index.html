@@ -1,296 +1,464 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>LuxuryHotel a Hotel Template</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+    <html lang="en">
+      <head>
+        <title>astroparaiso</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <header role="banner">
-     
-      <nav class="navbar navbar-expand-md navbar-dark bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Astroparaiso</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+        <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        
+    
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="css/style.css">
+          <!-- Bootstrap CSS File -->
+        <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+        <!-- Libraries CSS Files -->
+        <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+        <!-- <link href="lib/animate/animate.min.css" rel="stylesheet">-->
+        <link href="lib/venobox/venobox.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      </head>
+      <body>
+        <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="rooms.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="rooms.html">Videos</a>
-                  <a class="dropdown-item" href="rooms.html">Cuarto doble</a>
-                  <a class="dropdown-item" href="rooms.html">Cabañas</a>
-                  <a class="dropdown-item" href="rooms.html">Cuarto individual</a>
-                </div>
+<!-- Owl Carousel JS -->
+<script src="/Users/sebasmos/Desktop/astronomiaparaiso/lib/owlcarousel/owl.carousel.min.js"></script>
 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
+<!-- Venobox JS -->
+<!-- <script src="path/to/venobox.min.js"></script> -->
 
-               <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Reserve ahora</span></a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- END header -->
+<script>
+  $(document).ready(function() {
+    $('.eventos-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
 
-    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.png);">
-      <div class="container">
-        <div class="row align-items-center site-hero-inner justify-content-center">
-          <div class="col-md-12 text-center">
+    // Initialize Venobox
+    $('.venobox').venobox();
+  });
+</script>
+        
+        <header role="banner">
+         
+          <nav class="navbar navbar-expand-md navbar-dark bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Astroparaiso</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+                <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Alojamiento.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alojamiento</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                      <a class="dropdown-item" href="rooms.html">Videos</a>
+                      <a class="dropdown-item" href="rooms.html">Cuarto doble</a>
+                      <a class="dropdown-item" href="rooms.html">Cabañas</a>
+                      <a class="dropdown-item" href="rooms.html">Cuarto individual</a>
+                    </div> -->
+    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#catalogo">Catálogo</a>
+                  </li>
 
-            <div class="mb-5 element-animate">
-              <h1>Bienvenido al Observatorio Astrónomico Francisco José de Caldas</h1>
-              <p>Descubre nuestro catálogo.</p>
-              <p><a href="booknow.html" class="btn btn-primary">Reserva ahora</a></p>
-            </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.booking.com/hotel/co/hostal-sueno-paraiso-observatorio-astronomico.en-gb.html">Alojamiento</a>
+                  </li>
+                  
+                  
 
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#equipo">Equipo</a>
+                  </li>
 
-    <section class="site-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <div class="heading-wrap text-center element-animate">
-              <h4 class="sub-heading">Stay with our luxury rooms</h4>
-              <h2 class="heading">Stay and Enjoy</h2>
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo similique natus, a recusandae? Dolorum, unde a quibusdam est? Corporis deleniti obcaecati quibusdam inventore fuga eveniet! Qui delectus tempore amet!</p>
-              <p><a href="#" class="btn btn-primary btn-sm">More About Us</a></p>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-7">
-            <img src="images/f_img_1.png" alt="Image placeholder" class="img-md-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#historia">Historia</a>
+                  </li>
 
-    <section class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 heading-wrap text-center">
-            <h4 class="sub-heading">Our Luxury Rooms</h4>
-              <h2 class="heading">Featured Rooms</h2>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-md-7">
-            <div class="media d-block room mb-0">
-              <figure>
-                <img src="images/img_1.png" alt="Generic placeholder image" class="img-fluid">
-                <div class="overlap-text">
-                  <span>
-                    Featured Room 
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                  </span>
-                </div>
-              </figure>
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">Presidential Room</a></h3>
-                <ul class="room-specs">
-                  <li><span class="ion-ios-people-outline"></span> 2 Guests</li>
-                  <li><span class="ion-ios-crop"></span> 22 ft <sup>2</sup></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                  </li>
+                  
+    
+                   <li class="nav-item cta">
+                    <a class="nav-link" href="https://wa.me/573154183005"><span>Reserve ahora</span></a>
+                  </li>
                 </ul>
-                <p>Nulla vel metus scelerisque ante sollicitudin. Fusce condimentum nunc ac nisi vulputate fringilla. </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Book Now From $20</a></p>
+                
               </div>
             </div>
-          </div>
-          <div class="col-md-5 room-thumbnail-absolute">
-            <a href="#" class="media d-block room bg first-room" style="background-image: url(images/img_2.jpg); ">
-              <!-- <figure> -->
-                <div class="overlap-text">
-                  <span>
-                    Hotel Room 
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                  </span>
-                  <span class="pricing-from">
-                    from $22
-                  </span>
+          </nav>
+        </header>
+        <!-- END header -->
+    
+        <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.png);">
+          <div class="container">
+            <div class="row align-items-center site-hero-inner justify-content-center">
+              <div class="col-md-12 text-center">
+    
+                <div class="mb-5 element-animate">
+                  <h1>Bienvenido al Observatorio Astrónomico Francisco José de Caldas</h1>
+                  <p>Descubre nuestro catálogo.</p>
+                  <p><a href="https://wa.me/573154183005" class="btn btn-primary">Reserva ahora</a></p>
                 </div>
-              <!-- </figure> -->
-            </a>
+    
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <a href="#" class="media d-block room bg second-room" style="background-image: url(images/img_4.jpg); ">
-              <!-- <figure> -->
-                <div class="overlap-text">
-                  <span>
-                    Hotel Room 
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                    <span class="ion-ios-star"></span>
-                  </span>
-                  <span class="pricing-from">
-                    from $22
-                  </span>
+        <section class="site-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center">
+                <div class="heading-wrap element-animate">
+                  <h4 class="sub-heading">Visita El Observatorio Astronómico Francisco José de Caldas</h4>
+                  <h2 class="heading">Vive y disfruta</h2>
+                  <p class="mb-5">Un espacio ideal para familias, colegios</p>
+                  <p><a href="#catalogo" class="btn btn-primary btn-sm">Nuestros planes</a></p>
                 </div>
-              <!-- </figure> -->
-            </a>
-            
+              </div>
+              <div class="col-md-1 d-none d-md-block"></div> <!-- Espacio extra en pantallas grandes -->
+              <div class="col-md-7">
+                <img src="images/IM2.png" alt="Observatorio" class="img-fluid w-100">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-   
-    
-    <section class="section-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/img_5.jpg);">
-      <div class="container">
-        <div class="row justify-content-center align-items-center intro">
-          <div class="col-md-9 text-center element-animate">
-            <h2>Relax and Enjoy your Holiday</h2>
-            <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem tempore expedita facere facilis, dolores!</p>
-            <div class="btn-play-wrap"><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn-play popup-vimeo "><span class="ion-ios-play"></span></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
     <!-- END section -->
+
+        <!-- END section -->
+        <section id="catalogo"  class="site-section bg-light">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-12 heading-wrap text-center">
+                <h4 class="sub-heading">¿Qué hay para hacer?</h4>
+                <h2 class="heading">Catálogo</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Tarjeta 1: Tour Astronómico -->
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/tour1.jpg" alt="Tour Astronómico" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Plan recomendado</div>
+                    <h3 class="mb-3"><a href="#">TOUR 1: ASTRONÓMICO + HOSPEDAJE - COP 90.000</a></h3>
+                    <p class="mb-4">
+                      📅 Fechas: Con reserva previa<br>
+                      📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
+                      ✅ INCLUYE:<br>
+                      ➤ Experiencia astronómica con telescopio y tour de constelaciones 🔭🌠<br>
+                      ➤ Hospedaje en hostal/ecocabaña + cena tradicional 🍽️<br>
+                      ➤ Extra opcional: Fogata grupal para 10+ personas 🔥<br>
+                      ⚠️ NO INCLUYE: Transporte ni elementos personales.<br>
+                    </p>
+                    <p><a href="https://wa.me/573154183005" class="btn btn-primary btn-outline-primary btn-sm">Reservar</a></p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 2: Tour Familiar -->
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/familiar.jpg" alt="Tour Familiar" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Plan recomendado</div>
+                    <h3 class="mb-3"><a href="#">TOUR 2: FAMILIAR - PASADÍA - COP 20.000</a></h3>
+                    <p class="mb-4">
+                      📅 Fechas: Con reserva previa<br>
+                      📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
+                      ✅ INCLUYE:<br>
+                      ➤ Recorrido ecológico 🌳🦋<br>
+                      ➤ Almuerzo campestre 🍲 + zona de juegos 🚀🎨<br>
+                      ➤ Visita al planetario y observación astronómica 🔭🪐<br>
+                      ⚠️ NO INCLUYE: Transporte ni alojamiento.<br>
+                    </p>
+                    <p><a href="https://wa.me/573154183005" class="btn btn-primary btn-outline-primary btn-sm">Reservar</a></p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 3: Atardecer Cósmico -->
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/img_2.jpg" alt="Atardecer Cósmico" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Plan recomendado</div>
+                    <h3 class="mb-3"><a href="#">TOUR 3: ATARDECER ENTRE COLORES CÓSMICOS - COP 20.000</a></h3>
+                    <p class="mb-4">
+                      📅 Fechas: Con reserva previa<br>
+                      📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
+                      ✅ INCLUYE:<br>
+                      ➤ Caminata ecológica al atardecer 🌄🌿<br>
+                      ➤ Observación del cielo con telescopio 🔭✨<br>
+                      ➤ Extra opcional: Fogata grupal y cena típica ☕🥘<br>
+                      ⚠️ NO INCLUYE: Transporte ni alojamiento.<br>
+                    </p>
+                    <p><a href="https://wa.me/573154183005" class="btn btn-primary btn-outline-primary btn-sm">Reservar</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     
-    <section class="site-section bg-light">
+    
+    
+    <!-- VIDEO Section -->
+    <section class="section-cover video-section" data-stellar-background-ratio="0.5">
+      <!-- Background Video -->
+      <video class="background-video" autoplay  loop playsinline muted id="bg-video">
+          
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          
+      </video>
+    
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 heading-wrap text-center">
-            <h4 class="sub-heading">Our Blog</h4>
-              <h2 class="heading">Our Recent Blog</h2>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-md-4">
-            <div class="post-entry">
-              <img src="images/img_3.jpg" alt="Image placeholder" class="img-fluid">
-              <div class="body-text">
-                <div class="category">Rooms</div>
-                <h3 class="mb-3"><a href="#">New Rooms</a></h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+          <div class="row justify-content-center align-items-center intro">
+              <div class="col-md-9 text-center element-animate">
+                  <h2>Relax and Enjoy your Holiday</h2>
+                  <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem tempore expedita facere facilis, dolores!</p>
               </div>
-            </div>
           </div>
-          <div class="col-md-4">
-            <div class="post-entry">
-              <img src="images/img_6.jpg" alt="Image placeholder" class="img-fluid">
-              <div class="body-text">
-                <div class="category">News</div>
-                <h3 class="mb-3"><a href="#">New Staff Added</a></h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="post-entry">
-              <img src="images/img_5.jpg" alt="Image placeholder" class="img-fluid">
-              <div class="body-text">
-                <div class="category">New Rooms</div>
-                <h3 class="mb-3"><a href="#">Big Rooms for All</a></h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
-                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-    <!-- END section -->
-   
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h3>Phone Support</h3>
-            <p>24/7 Call us now.</p>
-            <p class="lead"><a href="tel://">+ 1 332 3093 323</a></p>
-          </div>
-          <div class="col-md-4">
-            <h3>Connect With Us</h3>
-            <p>We are socialized. Follow us</p>
-            <p>
-              <a href="#" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
-              <a href="#" class="p-3"><span class="fa fa-twitter"></span></a>
-              <a href="#" class="p-3"><span class="fa fa-instagram"></span></a>
-              <a href="#" class="p-3"><span class="fa fa-vimeo"></span></a>
-              <a href="#" class="p-3"><span class="fa fa-youtube-play"></span></a>
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3>Connect With Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio.</p>
-            <form action="#" class="subscribe">
-              <div class="form-group">
-                <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
-                <input type="email" class="form-control" placeholder="Enter email">
-              </div>
-              
-            </form>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center">
-            &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END footer -->
+        <!-- END section -->
     
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+        
+        
+        <section id="equipo"  class="site-section bg-light">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-12 heading-wrap text-center">
+                <h4 class="sub-heading">Nuestro equipo</h4>
+                  <h2 class="heading">Nuestro equipo Astronómico</h2>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Co-Fundador</div>
+                    <h3 class="mb-3"><a href="#">Patricia Ordoñez</a></h3>
+                    <p class="mb-4">Patricia Ordóñez Castillo es ecóloga, especializada en teledetección para encuestas rurales y turismo de naturaleza. Coordina el proyecto de Producción Limpia y Negocios Verdes en la CRC y organiza la IV Feria de Emprendimiento: Conexiones Verdes. Fundadora del Observatorio Francisco José de Caldas. Su enfoque es la sostenibilidad y conservación ambiental en el Cauca, Colombia.</p>
+                    <p><a href="https://www.facebook.com/story.php?story_fbid=962394629258991&id=100064653880868&_rdr" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/alejandro.jpeg" alt="Image placeholder" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Intérprete de Astronómico</div>
+                    <h3 class="mb-3"><a href="#">Juan Alejandro Cárdenas</a></h3>
+                    <p class="mb-4">Juan Alejandro Cárdenas es estudiante de Ingeniería Física y divulgador científico. Se desempeña como intérprete en el Observatorio Astronómico Francisco José de Caldas, donde guía actividades de observación y educación astronómica. Su trabajo se enfoca en acercar el conocimiento del universo a la comunidad a través de charlas, eventos y experiencias interactivas..</p>
+                    <p><a href="https://www.linkedin.com/in/juan-alejandro-cardenas-urbano-27ab452b4/?originalSubdomain=co" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="post-entry">
+                  <img src="images/orozco.png" alt="Image placeholder" class="img-fluid">
+                  <div class="body-text">
+                    <div class="category">Intérprete de Astronómico</div>
+                    <h3 class="mb-3"><a href="#">Sebastián Orozco Monje </a></h3>
+                    <p class="mb-4">Juan Sebastián Orozco Monje es un estudiante de ingeniería electrónica apasionado por la astronomía. Su trabajo en el Observatorio Astronómico Francisco José de Caldas en Popayán se centra en la divulgación científica y la educación en astronomía. A través de talleres y observaciones guiadas, busca inspirar a la comunidad a explorar el cielo y comprender mejor el universo. Su compromiso con la ciencia y la tecnología lo convierte en un importante aliado en la promoción del conocimiento astronómico en Colombia..</p>
+                    <p><a href="https://www.unicauca.edu.co/noticias-actualidad/investigadores-unicaucanos-presentan-un-sistema-innovador-de-monitoreo-para-la-fermentacion-del-cafe/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END section -->
+    
+    
+        <section id="historia" class="site-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="heading-wrap element-animate">
+                  <h4 class="sub-heading">Visítanos</h4>
+                  <h2 class="heading">Nuestra historia</h2>
+                  <p>El Observatorio Astronómico Francisco José de Caldas en Popayán fue construido en 2013 bajo la dirección de Patricia Ordóñez Castillo. Este espacio fue concebido como un centro de divulgación científica y astronómica para la comunidad, brindando oportunidades de aprendizaje y observación del cielo 
+                  <a href="https://www.radionacional.co/turismo/astronomia-colombia-sueno-paraiso-observatorio-popayan?utm_source=chatgpt.com" style="color: blue;" target="_blank">(ver más en Noticias Radio)</a>.
+                  </p>
+        
+                  <p>Ubicado en el departamento del Cauca, el observatorio se ha convertido en un punto de referencia para la educación y el turismo astronómico, ofreciendo actividades para familias, colegios y entusiastas de la astronomía.</p>
+        
+                  <p>Desde su inauguración, ha sido un lugar clave para la promoción del conocimiento astronómico en la región, organizando eventos y observaciones guiadas para el público en general. Además, el observatorio es un aliado estratégico de <a href="https://fiet.unicauca.edu.co/aess/" style="color: blue;" target="_blank">AESS Unicauca</a>.</p>
+                </div>
+              </div>
+              <div class="col-md-7 d-flex justify-content-center">
+                <img src="images/observatorio_2.jpg" alt="Image placeholder" class="img-fluid w-75">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END section -->
+    
+        <section id="eventos" class="site-section bg-light">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-12 heading-wrap text-center">
+                <h4 class="sub-heading">Eventos</h4>
+                <h2 class="heading">Nuestro blog de eventos</h2>
+              </div>
+            </div>
+        
+            <div class="owl-carousel eventos-carousel">
+              <div class="item">
+                <a href="images/liberal.png" class="venobox" data-gall="eventos-carousel">
+                  <img src="images/liberal.png" alt="El nuevo liberal" class="img-fluid">
+                </a>
+                <div class="body-text">
+                  <div class="category">Noticias</div>
+                  <h3 class="mb-3"><a href="#">El nuevo liberal</a></h3>
+                  <p class="mb-4">Sueño paraíso: eco-destino de cielo y tierra.</p>
+                  <p><a href="https://elnuevoliberal.com/noticia-principal/sueno-paraiso-eco-destino-de-cielo-y-tierra/" class="btn btn-primary btn-outline-primary btn-sm">Leer ahora</a></p>
+                </div>
+              </div>
+        
+              <div class="item">
+                <a href="images/img_6.jpg" class="venobox" data-gall="eventos-carousel">
+                  <img src="images/img_6.jpg" alt="New Staff Added" class="img-fluid">
+                </a>
+                <div class="body-text">
+                  <div class="category">News</div>
+                  <h3 class="mb-3"><a href="#">New Staff Added</a></h3>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
+                  <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                </div>
+              </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
+              <div class="item">
+                <a href="images/img_6.jpg" class="venobox" data-gall="eventos-carousel">
+                  <img src="images/img_6.jpg" alt="New Staff Added" class="img-fluid">
+                </a>
+                <div class="body-text">
+                  <div class="category">News</div>
+                  <h3 class="mb-3"><a href="#">New Staff Added</a></h3>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
+                  <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                </div>
+              </div>
+        
+              <div class="item">
+                <a href="images/img_5.jpg" class="venobox" data-gall="eventos-carousel">
+                  <img src="images/img_5.jpg" alt="Big Rooms for All" class="img-fluid">
+                </a>
+                <div class="body-text">
+                  <div class="category">New Rooms</div>
+                  <h3 class="mb-3"><a href="#">Big Rooms for All</a></h3>
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.</p>
+                  <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- END section -->
+       
 
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
 
-    <script src="js/main.js"></script>
-  </body>
-</html>
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-4">
+                <h3>Phone Support</h3>
+                <p>24/7 Contáctanos</p>
+                <p class="lead"><a href="tel://">3154183005</a></p>
+              </div>
+              <div class="col-md-4">
+                <h3>Contáctanos</h3>
+                <p>Estamos en todas las redes sociales, Síguenos!</p>
+                <p>
+                  <a href="https://www.instagram.com/astroparaiso" class="p-3"><span class="fa fa-instagram"></span></a>
+                  <a href="https://www.facebook.com/astroparaiso" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
+                  
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h3>Contáctanos</h3>
+                <p>Envianos un correo</p>
+                <form action="#" class="subscribe">
+                  <div class="form-group">
+                    <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
+                    <input type="email" class="form-control" placeholder="escribe tu correo para futuros eventos">
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-7 text-center">
+                &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="#" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- END footer -->
+        
+        <!-- loader -->
+        <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+    
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+    
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+    
+        
+        <!-- JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/venobox/venobox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+      </body>
+    </html>
