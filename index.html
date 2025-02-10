@@ -27,6 +27,38 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
       </head>
       <body>
+<!-- Add this right after the opening <body> tag -->
+  <audio id="welcomeSound" autoplay>
+    <source src="sounds/podcast-observatorio-aess.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- Add this script just before the closing </body> tag -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('welcomeSound');
+      
+      // Attempt to play audio automatically
+      audio.play().catch(function(error) {
+        // Handle autoplay restrictions
+        console.log('Autoplay prevented: ', error);
+        
+        // Optional: Add a button to let users start audio
+        var playButton = document.createElement('button');
+        playButton.textContent = 'Play Welcome Sound';
+        playButton.style.position = 'fixed';
+        playButton.style.bottom = '20px';
+        playButton.style.right = '20px';
+        playButton.style.zIndex = '1000';
+        playButton.onclick = function() {
+          audio.play();
+          document.body.removeChild(playButton);
+        };
+        document.body.appendChild(playButton);
+      });
+    });
+  </script>
+  
         <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -141,7 +173,7 @@
                 <div class="heading-wrap element-animate">
                   <h4 class="sub-heading">Visita El Observatorio Astronómico Francisco José de Caldas</h4>
                   <h2 class="heading">Vive y disfruta</h2>
-                  <p class="mb-5">Un espacio ideal para familias, colegios</p>
+                  <p class="mb-5">¿Eres de las personas que siempre soñaron con ver el cielo y sentir que se puede tocar las estrellas?  ¿cuántas veces dirigiste la mirada al firmamento, para deleitarte con los colores y las formas de mundos desconocidos y lejanos, buscando experimentar y sentir la vida más cerca del espacio y sus maravillas?</p>
                   <p><a href="#catalogo" class="btn btn-primary btn-sm">Nuestros planes</a></p>
                 </div>
               </div>
@@ -646,7 +678,7 @@
                   <div class="body-text">
                     <div class="category">Co-Fundador</div>
                     <h3 class="mb-3"><a href="#">Patricia Ordoñez</a></h3>
-                    <p class="mb-4">Patricia Ordóñez Castillo es ecóloga, especializada en teledetección para encuestas rurales y turismo de naturaleza. Coordina el proyecto de Producción Limpia y Negocios Verdes en la CRC y organiza la IV Feria de Emprendimiento: Conexiones Verdes. Fundadora del Observatorio Francisco José de Caldas. Su enfoque es la sostenibilidad y conservación ambiental en el Cauca, Colombia..</p>
+                    <p class="mb-4">Patricia Ordóñez Castillo es ecóloga, especializada en la interpretación de sensores remotos para levantamientos rurales, educación ambiental y turismo de naturaleza. Actualmente, coordina los proyectos de Reconversión de Sistemas Productivos y Negocios Verdes en la CRC.  Es fundadora del Ecodestino Sueño Paraíso – Observatorio Astronómico Francisco José de Caldas, un espacio dedicado a la conservación ambiental y la divulgación científica. Su misión de vida es proteger y preservar el entorno natural del Cauca, promoviendo un equilibrio entre desarrollo y sostenibilidad.</p>
                     <p><a href="https://www.facebook.com/story.php?story_fbid=962394629258991&id=100064653880868&_rdr" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
                   </div>
                 </div>
@@ -668,7 +700,7 @@
                   <div class="body-text">
                     <div class="category">Intérprete de Astronómico</div>
                     <h3 class="mb-3"><a href="#">Juan Alejandro Cárdenas</a></h3>
-                    <p class="mb-4">Juan Alejandro Cárdenas es estudiante de Ingeniería Física y divulgador científico. Se desempeña como intérprete en el Observatorio Astronómico Francisco José de Caldas, donde guía actividades de observación y educación astronómica. Su trabajo se enfoca en acercar el conocimiento del universo a la comunidad a través de charlas, eventos y experiencias interactivas.</p>
+                    <p class="mb-4">Juan Alejandro Cárdenas es estudiante de Ingeniería de sistemas y divulgador científico. Se desempeña como intérprete en el Observatorio Astronómico Francisco José de Caldas, donde guía actividades de observación y educación astronómica. Su trabajo se enfoca en acercar el conocimiento del universo a la comunidad a través de charlas, eventos y experiencias interactivas.</p>
                     <p><a href="https://www.linkedin.com/in/juan-alejandro-cardenas-urbano-27ab452b4/?originalSubdomain=co" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
                   </div>
                 </div>
@@ -679,7 +711,7 @@
                   <div class="body-text">
                     <div class="category">Intérprete de Astronómico</div>
                     <h3 class="mb-3"><a href="#">Sebastián Orozco Monje</a></h3>
-                    <p class="mb-4">Estudiante de ingeniería electrónica, se centra en la divulgación científica y la educación en astronomía, buscando inspirar a la comunidad.</p>
+                    <p class="mb-4">Juan Sebastián Orozco Monje, ingeniero electrónico apasionado por la astronomía. Su trabajo en el Observatorio Astronómico Francisco José de Caldas en Popayán se centra en la divulgación científica y la educación en astronomía. A través de talleres y observaciones guiadas, busca inspirar a la comunidad a explorar el cielo y comprender mejor el universo. Su compromiso con la ciencia y la tecnología lo convierte en un importante aliado en la promoción del conocimiento astronómico en Colombia..</p>
                     <p><a href="https://www.unicauca.edu.co/noticias-actualidad/investigadores-unicaucanos-presentan-un-sistema-innovador-de-monitoreo-para-la-fermentacion-del-cafe/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
                   </div>
                 </div>
@@ -725,7 +757,7 @@
         </section>
         <!-- END section -->
     
-        <section id="eventos" class="site-section bg-light">
+        <!-- <section id="eventos" class="site-section bg-light">
           <div class="container">
             <div class="row mb-5">
               <div class="col-md-12 heading-wrap text-center">
@@ -784,9 +816,39 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- END section -->
-       
+
+      <!-- Add this section before the footer -->
+    <section id="podcasts" class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 heading-wrap text-center">
+            <h4 class="sub-heading">Explora nuestro contenido</h4>
+            <h2 class="heading">Podcasts Astronómicos</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Podcast Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/tour1.jpg" alt="Observatorio AESS Podcast" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Episodio 1</div>
+                <h3 class="mb-3">Observatorio AESS</h3>
+                <p class="mb-4">Descubre los secretos del universo a través de nuestra experiencia en el observatorio astronómico.</p>
+                <audio id="podcastAudio" src="sounds/podcast observatorio-aess.wav"></audio>
+                <button onclick="togglePlay()" class="btn btn-primary btn-outline-primary btn-sm">
+                  <span class="play-text">Reproducir</span>
+                  <span class="pause-text" style="display:none;">Pausar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          
 
 
         <footer class="site-footer">
@@ -911,4 +973,7 @@
           </script>
         
       </body>
+
+    
+  
     </html>
