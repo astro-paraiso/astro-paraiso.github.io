@@ -820,34 +820,138 @@
         <!-- END section -->
 
       <!-- Add this section before the footer -->
-    <section id="podcasts" class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12 heading-wrap text-center">
-            <h4 class="sub-heading">Explora nuestro contenido</h4>
-            <h2 class="heading">Podcasts Astronómicos</h2>
+      <!-- Sección de Podcasts -->
+      <section id="podcasts" class="site-section bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12 heading-wrap text-center">
+              <h4 class="sub-heading">Explora nuestro contenido</h4>
+              <h2 class="heading">Podcasts Astronómicos</h2>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <!-- Podcast Card 1 -->
-          <div class="col-12 col-sm-6 col-md-4 d-flex">
-            <div class="post-entry flex-fill">
-              <img src="images/tour1.jpg" alt="Observatorio AESS Podcast" class="img-fluid">
-              <div class="body-text">
-                <div class="category">Episodio 1</div>
-                <h3 class="mb-3">Observatorio AESS</h3>
-                <p class="mb-4">Descubre los secretos del universo a través de nuestra experiencia en el observatorio astronómico.</p>
-                <audio id="podcastAudio" src="sounds/podcast observatorio-aess.wav"></audio>
-                <button onclick="togglePlay()" class="btn btn-primary btn-outline-primary btn-sm">
-                  <span class="play-text">Reproducir</span>
-                  <span class="pause-text" style="display:none;">Pausar</span>
-                </button>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex">
+              <div class="post-entry flex-fill">
+                <img src="images/tour1.jpg" alt="Observatorio AESS Podcast" class="img-fluid">
+                <div class="body-text">
+                  <div class="category">Episodio 1</div>
+                  <h3 class="mb-3">Observatorio AESS</h3>
+                  <p class="mb-4">Descubre los secretos del universo a través de nuestra experiencia en el observatorio astronómico.</p>
+                  <div class="audio-player">
+                    <audio id="podcastAudio" preload="metadata">
+                      <source src="sounds/podcast observatorio-aess.wav" type="audio/wav">
+                      Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <div class="audio-controls">
+                      <button id="playButton" class="btn btn-primary btn-outline-primary btn-sm">
+                        <i class="fa fa-play"></i> <span>Reproducir</span>
+                      </button>
+                      <div class="progress mt-2">
+                        <div id="progressBar" class="progress-bar" role="progressbar"></div>
+                      </div>
+                      <div class="time-display mt-1">
+                        <small><span id="currentTime">0:00</span> / <span id="duration">0:00</span></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <style>
+      .audio-player {
+        margin-top: 20px;
+      }
+
+      .audio-controls {
+        width: 100%;
+      }
+
+      .progress {
+        height: 5px;
+        cursor: pointer;
+        background-color: #e9ecef;
+      }
+
+      .progress-bar {
+        background-color: #31708E;
+        transition: width 0.1s linear;
+      }
+
+      .time-display {
+        color: #666;
+        text-align: center;
+      }
+
+      #playButton {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      #playButton:hover {
+        background-color: #31708E;
+        color: white;
+      }
+      </style>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('podcastAudio');
+        const playButton = document.getElementById('playButton');
+        const progressBar = document.getElementById('progressBar');
+        const currentTimeSpan = document.getElementById('currentTime');
+        const durationSpan = document.getElementById('duration');
+
+        // Función para formatear el tiempo en minutos:segundos
+        function formatTime(seconds) {
+          const minutes = Math.floor(seconds / 60);
+          seconds = Math.floor(seconds % 60);
+          return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        // Actualizar duración total cuando se carga el audio
+        audio.addEventListener('loadedmetadata', function() {
+          durationSpan.textContent = formatTime(audio.duration);
+        });
+
+        // Manejar clic en el botón de reproducción
+        playButton.addEventListener('click', function() {
+          if (audio.paused) {
+            audio.play();
+            playButton.innerHTML = '<i class="fa fa-pause"></i> <span>Pausar</span>';
+          } else {
+            audio.pause();
+            playButton.innerHTML = '<i class="fa fa-play"></i> <span>Reproducir</span>';
+          }
+        });
+
+        // Actualizar barra de progreso y tiempo actual
+        audio.addEventListener('timeupdate', function() {
+          const progress = (audio.currentTime / audio.duration) * 100;
+          progressBar.style.width = progress + '%';
+          currentTimeSpan.textContent = formatTime(audio.currentTime);
+        });
+
+        // Permitir clic en la barra de progreso para cambiar la posición
+        document.querySelector('.progress').addEventListener('click', function(e) {
+          const rect = this.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const width = rect.width;
+          const percentage = x / width;
+          audio.currentTime = percentage * audio.duration;
+        });
+
+        // Cuando termina el audio
+        audio.addEventListener('ended', function() {
+          playButton.innerHTML = '<i class="fa fa-play"></i> <span>Reproducir</span>';
+          progressBar.style.width = '0%';
+          audio.currentTime = 0;
+        });
+      });
+      </script>
           
 
 
