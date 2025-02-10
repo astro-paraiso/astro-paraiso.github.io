@@ -260,29 +260,407 @@
               </div>
             </div>
           </div>
+
+          <style>
+            /* Estilos para la sección de catálogo */
+            .site-section.bg-light {
+              background-color: #f9f9f9 !important; /* Un fondo suave */
+            }
+            
+            /* Estilos para los encabezados */
+            .heading-wrap .sub-heading {
+              color: #687864; /* Verde sage para el subtítulo */
+            }
+            
+            .heading-wrap .heading {
+              color: #2C5530; /* Verde bosque para el título principal */
+            }
+            
+            /* Estilos para las tarjetas */
+            .post-entry {
+              border: 1px solid #eee;
+              transition: all 0.3s ease;
+              background: white;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+            
+            .post-entry:hover {
+              box-shadow: 0 5px 15px rgba(27, 54, 68, 0.1);
+              transform: translateY(-2px);
+            }
+            
+            /* Categoría en la tarjeta */
+            .post-entry .category {
+              color: #31708E; /* Azul cielo nocturno */
+              font-weight: 600;
+            }
+            
+            /* Título de la tarjeta */
+            .post-entry h3 a {
+              color: #1B3644; /* Azul noche */
+              transition: color 0.3s ease;
+            }
+            
+            .post-entry h3 a:hover {
+              color: #31718e59; /* Verde bosque al hover */
+              text-decoration: none;
+            }
+            
+            /* Enlaces dentro del texto */
+            .post-entry .body-text a {
+              color: #31708E; /* Azul cielo nocturno */
+              text-decoration: none;
+              transition: color 0.3s ease;
+            }
+            
+            .post-entry .body-text a:hover {
+              color: #31708E; /* Verde bosque al hover */
+            }
+            
+            /* Botón de reserva */
+            .btn-primary.btn-outline-primary {
+              color: #2C5530;
+              border-color: #31708E;
+              background: transparent;
+              transition: all 0.3s ease;
+            }
+            
+            .btn-primary.btn-outline-primary:hover {
+              background: #31718e7a;
+              color: white;
+            }
+            
+            /* Iconos y emojis */
+            .post-entry .body-text br + span {
+              color: #5E503F; /* Color tierra para los íconos */
+            }
+            
+            /* Enlaces de ubicación */
+            .post-entry .body-text a[target="_blank"] {
+              color: #31708E;
+              text-decoration: underline;
+              transition: color 0.3s ease;
+            }
+            
+            .post-entry .body-text a[target="_blank"]:hover {
+              color: #2c3c55;
+            }
+            </style>
         </section>
+
+      <!--==========================
+     Galería Section
+   ============================-->
+      <section id="gallery" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Galería</h2>
+            <p>Descubre nuestros momentos más especiales en el Observatorio Astronómico Francisco José de Caldas</p>
+          </div>
+        </div>
+        <style>
+          /* Contenedor del carrusel */
+          .owl-carousel.gallery-carousel {
+            padding: 20px 0;
+          }
+          
+          /* Ajuste de las imágenes */
+          .gallery-carousel .owl-item {
+            padding: 0 15px; /* Aumentar espacio entre imágenes */
+          }
+          
+          .gallery-carousel .owl-item img {
+            height: 350px; /* Altura fija para todas las imágenes */
+            width: 100%; /* Ancho completo del contenedor */
+            object-fit: cover; /* Mantener proporción y cubrir el espacio */
+            border-radius: 8px; /* Opcional: bordes redondeados */
+          }
+          
+          /* Centrar los dots de navegación horizontalmente */
+          .owl-dots {
+            
+            display: flex !important;
+            justify-content: center !important;
+            margin-top: 30px !important;
+            position: static !important;
+          }
+          
+          .owl-dot {
+            display: inline-block !important;
+            margin: 0 5px !important;
+          }
+          
+          /* Contenedor principal para limitar el ancho máximo */
+          .gallery-carousel {
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+        </style>
+
+        <div class="owl-carousel gallery-carousel">
+          <a href="images/img_1.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_1.jpg" alt="Observación astronómica" class="img-fluid">
+          </a>
+          <a href="images/img_2.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_2.jpg" alt="Eventos astronómicos" class="img-fluid">
+          </a>
+          <a href="images/img_3.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_3.jpg" alt="Actividades educativas" class="img-fluid">
+          </a>
+          <a href="images/img_4.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_4.jpg" alt="Vista nocturna" class="img-fluid">
+          </a>
+          <a href="images/img_5.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_5.jpg" alt="Telescopio" class="img-fluid">
+          </a>
+          <a href="images/img_6.jpg" class="venobox" data-gall="gallery-carousel">
+            <img src="images/img_6.jpg" alt="Visitantes" class="img-fluid">
+          </a>
+         </div>
+      </section>
+
+          <!--==========================
+          Videos Section
+        ============================-->
+      <section id="videos" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Videos</h2>
+            <p>Descubre nuestras actividades y eventos a través de estos videos</p>
+          </div>
+        </div>
+
+          <div class="owl-carousel videos-carousel">
+            <!-- Video de YouTube -->
+            <div class="video-item">
+              <div class="video-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/E1ywBM07Ia8" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          
+      <!-- Video de Facebook -->
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D733401998434966&show_text=false" 
+            frameborder="0" 
+            scrolling="no" 
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+    </div>
+          
+          <!-- Puedes agregar más videos siguiendo el mismo patrón -->
+        </div>
+      </section>
+
+      <style>
+        /* Estilos para la sección de videos */
+        .videos-carousel {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px 0;
+        }
+        
+        /* Contenedor del item de video */
+        .video-item {
+          padding: 0 15px;
+          height: 315px; /* Altura fija para todos los videos */
+        }
+        
+        /* Wrapper para mantener proporción 16:9 y alineación */
+        .video-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          background: #000;
+        }
+        
+        /* Ajuste del iframe dentro del wrapper */
+        .video-wrapper iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+        
+        /* Navegación del carrusel */
+        .owl-carousel .owl-nav {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        }
+        
+        /* Dots de navegación */
+        .owl-dots {
+          display: flex !important;
+          justify-content: center !important;
+          margin-top: 20px !important;
+          position: static !important;
+        }
+        
+        .owl-dot {
+          display: inline-block !important;
+          margin: 0 5px !important;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+          .video-item {
+            height: 250px;
+          }
+          
+          .videos-carousel {
+            padding: 10px;
+          }
+        }
+        </style>
+        
+        <script>
+        $(document).ready(function() {
+          $('.videos-carousel').owlCarousel({
+            items: 3, // Mostrar 3 videos a la vez en pantallas grandes
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: true,
+            center: true, // Centrar el carrusel
+            autoplay: false,
+            responsive: {
+              0: {
+                items: 1
+              },
+              768: {
+                items: 2
+              },
+              1024: {
+                items: 3
+              }
+            }
+          });
+        });
+        </script>
+
     
     
     
     <!-- VIDEO Section -->
     <section class="section-cover video-section" data-stellar-background-ratio="0.5">
       <!-- Background Video -->
-      <video class="background-video" autoplay  loop playsinline muted id="bg-video">
-          
-            <source src="videos/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          
-      </video>
-    
-      <div class="container">
-          <div class="row justify-content-center align-items-center intro">
+      <div class="video-overlay"></div>
+      <video class="background-video" autoplay loop playsinline muted id="bg-video">
+                <source src="videos/video1.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+          </video>
+
+          <div class="container">
+            <div class="row justify-content-center align-items-center intro">
               <div class="col-md-9 text-center element-animate">
-                  <h2>Visítanos!</h2>
-                  <p class="lead mb-5">Toda visita se realiza por reserva</p>
+                <h2 class="mb-4">¡Visítanos!</h2>
+                <p class="lead mb-5">Toda visita se realiza por reserva</p>
+                <a href="https://wa.me/573154183005" class="btn btn-primary btn-lg">Reservar ahora</a>
               </div>
+            </div>
           </div>
-      </div>
-    </section>
+        </section>
+
+        <style>
+        /* Estilos para la sección de video */
+        .video-section {
+          position: relative;
+          min-height: 500px;
+          margin-top: 80px;
+          padding: 100px 0;
+          overflow: hidden;
+        }
+
+        /* Video de fondo */
+        .background-video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: 0;
+          object-fit: cover;
+        }
+
+        /* Overlay para mejorar legibilidad del texto */
+        .video-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+
+        /* Contenido sobre el video */
+        .video-section .container {
+          position: relative;
+          z-index: 2;
+        }
+
+        /* Estilos del texto */
+        .video-section h2 {
+          color: #fff;
+          font-size: 3rem;
+          font-weight: 700;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-section .lead {
+          color: #fff;
+          font-size: 1.5rem;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Botón personalizado */
+        .video-section .btn-primary {
+          padding: 15px 30px;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+        }
+
+        .video-section .btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .video-section {
+            min-height: 400px;
+            padding: 60px 0;
+          }
+
+          .video-section h2 {
+            font-size: 2.5rem;
+          }
+
+          .video-section .lead {
+            font-size: 1.2rem;
+          }
+        }
+        </style>
         <!-- END section -->
     
         <section id="equipo" class="site-section bg-light">
@@ -541,36 +919,59 @@
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/venobox/venobox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <!-- Add this script before </body> -->
-      <script>
-      let currentAudio = null;
-      
-      function togglePlay() {
-        const audio = document.getElementById('podcastAudio');
-        const button = event.target.closest('button');
-        const playText = button.querySelector('.play-text');
-        const pauseText = button.querySelector('.pause-text');
-      
-        // Stop any currently playing audio
-        if(currentAudio && currentAudio !== audio) {
-          currentAudio.pause();
-          currentAudio.previousElementSibling.querySelector('.play-text').style.display = 'inline';
-          currentAudio.previousElementSibling.querySelector('.pause-text').style.display = 'none';
-        }
-      
-        if(audio.paused) {
-          audio.play();
-          playText.style.display = 'none';
-          pauseText.style.display = 'inline';
-          currentAudio = audio;
-        } else {
-          audio.pause();
-          playText.style.display = 'inline';
-          pauseText.style.display = 'none';
-          currentAudio = null;
-        }
-      }
-      </script>
+
+
+        <script>
+          $(document).ready(function() {
+            // Inicialización del carrusel de galería
+            $('.gallery-carousel').owlCarousel({
+              items: 3,
+              loop: true,
+              center: true,
+              margin: 10,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                768: {
+                  items: 2
+                },
+                992: {
+                  items: 3
+                }
+              }
+            });
+          
+            // Inicialización del carrusel de videos
+            $('.videos-carousel').owlCarousel({
+              items: 1,
+              loop: true,
+              margin: 10,
+              nav: true,
+              dots: true,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                768: {
+                  items: 2
+                },
+                992: {
+                  items: 3
+                }
+              }
+            });
+          
+            // Inicialización de Venobox para la galería
+            $('.venobox').venobox({
+              bgcolor: '',
+              overlayColor: 'rgba(6, 12, 34, 0.85)',
+              closeBackground: '',
+              closeColor: '#fff'
+            });
+          });
+          </script>
+        
       </body>
 
     
