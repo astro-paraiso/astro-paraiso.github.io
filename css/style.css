@@ -1,3 +1,14 @@
+.logo {
+  max-height: 50px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-height: 40px;
+  }
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
