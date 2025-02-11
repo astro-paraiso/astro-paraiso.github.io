@@ -1,3 +1,13 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between the logo and the text */
+}
+
 .post-entry {
   background: white;
   border-radius: 8px;
@@ -247,12 +257,12 @@ header .navbar .dropdown-menu:before {
 }
 
 header .navbar .dropdown-menu .dropdown-item:hover {
-  background: #b99365;
+  background: #166aa6;
   color: #fff;
 }
 
 header .navbar .dropdown-menu .dropdown-item.active {
-  background: #b99365;
+  background: #166aa6;
   color: #fff;
 }
 
@@ -690,8 +700,8 @@ textarea.form-control {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  border-color: #c9ac88;
-  background: #c9ac88;
+  border-color: #166aa6;
+  background: #166aa6;
 }
 
 .btn.btn-sm {
@@ -700,7 +710,7 @@ textarea.form-control {
 
 .btn.btn-outline-primary {
   border-width: 2px;
-  color: #b99365;
+  color: #166aa6;
 }
 
 .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
@@ -726,7 +736,7 @@ textarea.form-control {
 
 .custom-icon {
   font-size: 70px;
-  color: #b99365;
+  color: #166aa6;
 }
 
 .no-nav .owl-nav {
@@ -789,7 +799,7 @@ textarea.form-control {
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-  background: #b99365;
+  background: #166aa6;
 }
 
 .owl-carousel.home-slider {
@@ -924,11 +934,11 @@ textarea.form-control {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #495057;
+  color: #166aa6;
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev:hover, .owl-carousel.major-caousel .owl-nav .owl-prev:focus, .owl-carousel.major-caousel .owl-nav .owl-next:hover, .owl-carousel.major-caousel .owl-nav .owl-next:focus {
-  color: #6c757d;
+  color: #166aa6;
   outline: none;
 }
 
@@ -1004,10 +1014,10 @@ textarea.form-control {
 }
 
 .box.hover:hover .box-body, .box.hover:focus .box-body {
-  background: #b99365;
+  background: #166aa6;
   color: #fff;
   padding: 30px 20px;
-  border-color: #b99365;
+  border-color: #166aa6;
 }
 
 .box.hover:hover h2, .box.hover:focus h2 {
@@ -1020,7 +1030,7 @@ textarea.form-control {
 }
 
 .breadcrumb-custom li a {
-  color: #b99365;
+  color: #166aa6;
 }
 
 .breadcrumb-custom li a:hover {
@@ -1033,7 +1043,7 @@ textarea.form-control {
 
 .breadcrumb-custom li.breadcrumb-item + .breadcrumb-item:before {
   content: "/";
-  color: rgba(255, 255, 255, 0.3);
+  color: #4db5ff;
 }
 
 .pagination {
@@ -1128,13 +1138,13 @@ textarea.form-control {
   display: block;
   border-radius: 4px;
   padding: 2px 6px;
-  color: gray;
+  color: 4db5ff;
   background: #f2f2f2;
 }
 
 .tags li a:hover {
   color: #fff;
-  background: #b99365;
+  background: #4db5ff;
 }
 
 .sidebar-box {
@@ -1219,7 +1229,7 @@ textarea.form-control {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: #ccc;
+  color: #4db5ff;
   font-family: "Rubik", arial, sans-serif;
 }
 
@@ -1245,7 +1255,7 @@ textarea.form-control {
 
 .media-feature .icon {
   font-size: 60px;
-  color: #b99365;
+  color: #4db5ff;
 }
 
 .media-feature h3 {
@@ -1290,7 +1300,7 @@ textarea.form-control {
 }
 
 .media-custom .meta-chat:hover {
-  color: #6c757d;
+  color: #166aa6;
 }
 
 .media-custom img {
@@ -1332,7 +1342,7 @@ textarea.form-control {
   display: block;
   text-align: left;
   text-decoration: none;
-  color: #b99365;
+  color: #166aa6;
   position: relative;
   -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
@@ -1427,7 +1437,7 @@ textarea.form-control {
   font-family: "Rubik", arial, sans-serif;
   font-size: 13px;
   letter-spacing: .2em;
-  color: #b3b3b3;
+  color: #166aa6;
   text-transform: uppercase;
 }
 
@@ -1517,7 +1527,7 @@ textarea.form-control {
 
 .post-entry-sidebar .post-meta {
   font-size: 14px;
-  color: #b3b3b3;
+  color: #4db5ff;
 }
 
 .post-entry-sidebar ul {
@@ -1596,7 +1606,7 @@ textarea.form-control {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: .1em;
-  color: #ccc;
+  color: #166aa6;
 }
 
 .comment-list li .comment-body .reply {
@@ -1613,7 +1623,7 @@ textarea.form-control {
 }
 
 .blog-entry-footer .post-meta {
-  color: gray;
+  color: 166aa6;
   font-size: 15px;
 }
 
