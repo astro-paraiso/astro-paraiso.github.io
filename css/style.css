@@ -206,7 +206,7 @@ header .navbar .nav-link {
 }
 
 header .navbar .nav-link:hover {
-  color: #fff !important;
+  color: #31708E !important;
 }
 
 header .navbar .nav-link.active {
@@ -1281,7 +1281,7 @@ textarea.form-control {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
   z-index: 2;
-  border-bottom: 10px solid #b99365;
+  border-bottom: 10px solid #31708E;
 }
 
 .media-custom {

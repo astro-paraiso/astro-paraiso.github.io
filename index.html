@@ -146,7 +146,7 @@
         </header>
         <!-- END header -->
     
-        <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(gallery/landscape3.png);">
+        <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(gallery/landscape2.png);">
           <div class="container">
             <div class="row align-items-center site-hero-inner justify-content-center">
               <div class="col-md-12 text-center">
@@ -273,7 +273,7 @@
                   <img src="gallery/landscape2.png" alt="Tour Astronómico" class="img-fluid">
                   <div class="body-text">
                     <div class="category">Plan recomendado</div>
-                    <h3 class="mb-3"><a href="#">TOUR 1: ASTRONÓMICO + HOSPEDAJE - COP 100.000</a></h3>
+                    <h3 class="mb-3"><a href="#">TOUR 1: ASTRONÓMICO + HOSPEDAJE</a></h3>
                     <p class="mb-4">
                       📅 Fechas: Con reserva previa<br>
                       📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
@@ -294,7 +294,7 @@
                   <img src="images/familiar.jpg" alt="Tour Familiar" class="img-fluid">
                   <div class="body-text">
                     <div class="category">Plan recomendado</div>
-                    <h3 class="mb-3"><a href="#">TOUR 2: FAMILIAR - PASADÍA - COP 20.000</a></h3>
+                    <h3 class="mb-3"><a href="#">TOUR 2: FAMILIAR - PASADÍA</a></h3>
                     <p class="mb-4">
                       📅 Fechas: Con reserva previa<br>
                       📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
@@ -315,7 +315,7 @@
                   <img src="images/img_2.jpg" alt="Atardecer Cósmico" class="img-fluid">
                   <div class="body-text">
                     <div class="category">Plan recomendado</div>
-                    <h3 class="mb-3"><a href="#">TOUR 3: ATARDECER ENTRE COLORES CÓSMICOS - COP 20.000</a></h3>
+                    <h3 class="mb-3"><a href="#">TOUR 3: ATARDECER ENTRE COLORES CÓSMICOS</a></h3>
                     <p class="mb-4">
                       📅 Fechas: Con reserva previa<br>
                       📍 Ubicación: <a href="https://maps.app.goo.gl/AJUkGey8wQKuw51g9?g_st=com.google.maps.preview.copy" target="_blank">Sueño Paraíso</a><br>
@@ -539,147 +539,178 @@
   </section>
 
 
+<!--==========================
+          Carrusel Videos Section
+============================-->
 
+<!--==========================
+  Videos Section
+============================-->
+<section id="videos" class="wow fadeInUp">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="heading">Videos</h2>
+      <p class="section-description">Descubre nuestras actividades y eventos a través de estos videos</p>
+    </div>
+  </div>
 
-          <!--==========================
-          Videos Section
-        ============================-->
-      <section id="videos" class="wow fadeInUp ">
-        <div class="container ">
-          <div class="section-header ">
-            <!-- <h2>Videos</h2> -->
-            <h2 class="heading">Videos</h2>
-<p class="section-description">Descubre nuestras actividades y eventos a través de estos videos</p>
-            <!-- <p>Descubre nuestras actividades y eventos a través de estos videos</p> -->
-          </div>
-        </div>
-
-          <div class="owl-carousel videos-carousel">
-            <!-- Video de YouTube -->
-            <div class="video-item">
-              <div class="video-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/E1ywBM07Ia8" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-          
-      <!-- Video de Facebook -->
-      <div class="video-item">
-        <div class="video-wrapper">
-          <iframe 
-            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D733401998434966&show_text=false" 
-            frameborder="0" 
-            scrolling="no" 
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
-        </div>
+  <div class="owl-carousel videos-carousel">
+    <!-- Video 1 -->
+    <div class="video-item">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/E1ywBM07Ia8" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
-          
-          <!-- Puedes agregar más videos siguiendo el mismo patrón -->
-        </div>
-      </section>
 
-      <style>
-        /* Estilos para la sección de videos */
-        .videos-carousel {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 20px 0;
-        }
-        
-        /* Contenedor del item de video */
-        .video-item {
-          padding: 0 15px;
-          height: 315px; /* Altura fija para todos los videos */
-        }
-        
-        /* Wrapper para mantener proporción 16:9 y alineación */
-        .video-wrapper {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          border-radius: 8px;
-          overflow: hidden;
-          background: #000;
-        }
-        
-        /* Ajuste del iframe dentro del wrapper */
-        .video-wrapper iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-        
-        /* Navegación del carrusel */
-        .owl-carousel .owl-nav {
-          margin-top: 20px;
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-        }
-        
-        /* Dots de navegación */
-        .owl-dots {
-          display: flex !important;
-          justify-content: center !important;
-          margin-top: 20px !important;
-          position: static !important;
-        }
-        
-        .owl-dot {
-          display: inline-block !important;
-          margin: 0 5px !important;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-          .video-item {
-            height: 250px;
-          }
-          
-          .videos-carousel {
-            padding: 10px;
-          }
-        }
-        </style>
-        
-        <script>
-        $(document).ready(function() {
-          $('.videos-carousel').owlCarousel({
-            items: 3, // Mostrar 3 videos a la vez en pantallas grandes
-            loop: true,
-            margin: 20,
-            nav: true,
-            dots: true,
-            center: true, // Centrar el carrusel
-            autoplay: false,
-            responsive: {
-              0: {
-                items: 1
-              },
-              768: {
-                items: 2
-              },
-              1024: {
-                items: 3
-              }
-            }
-          });
-        });
-        </script>
+    <!-- Video 2 -->
+    <div class="video-item">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/gi-3HTZLnSQ" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
+    <!-- Video 3 -->
+    <div class="video-item">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/1IZFPE7L-FU" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-item">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/t6MNGJ-6AIw" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Video 5 (Facebook) -->
+    <div class="video-item">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D733401998434966&show_text=false" 
+          frameborder="0" 
+          scrolling="no" 
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Puedes agregar más videos siguiendo el mismo patrón -->
+</section>
+
+<style>
+  /* Estilos para la sección de videos */
+  .videos-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Contenedor del item de video */
+  .video-item {
+    padding: 0 15px;
+    height: 315px; /* Altura fija para todos los videos */
+  }
+  
+  /* Wrapper para mantener proporción 16:9 y alineación */
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+  }
+  
+  /* Ajuste del iframe dentro del wrapper */
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Navegación del carrusel (ahora sin botones) */
+  .owl-carousel .owl-nav {
+    display: none;
+  }
+  
+  /* Dots de navegación */
+  .owl-dots {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+    position: static !important;
+  }
+  
+  .owl-dot {
+    display: inline-block !important;
+    margin: 0 5px !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .video-item {
+      height: 250px;
+    }
     
-    
-    
+    .videos-carousel {
+      padding: 10px;
+    }
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    $('.videos-carousel').owlCarousel({
+      items: 3, // Mostrar 3 videos a la vez en pantallas grandes
+      loop: true,
+      margin: 20,
+      nav: false, // Oculta los botones "prev" y "next"
+      dots: true,
+      center: true, // Centrar el carrusel
+      autoplay: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1024: {
+          items: 3
+        }
+      }
+    });
+  });
+</script>
+
+<!--==========================
+          Carrusel  Videos Section
+============================-->
     <!-- VIDEO Section -->
     <section class="section-cover video-section" data-stellar-background-ratio="0.5">
       <!-- Background Video -->
@@ -786,90 +817,98 @@
         }
         </style>
         <!-- END section -->
-    
-        <section id="equipo" class="site-section bg-light">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-12 heading-wrap text-center">
-                <h4 class="sub-heading">Nuestro equipo</h4>
-                <h2 class="heading">Nuestro equipo Astronómico</h2>
+    <!-- Equipo astronomico -->
+    <section id="equipo" class="site-section bg-light">
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h4 class="sub-heading">Nuestro equipo</h4>
+            <h2 class="heading">Nuestro equipo Astronómico</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Co-Fundador</div>
+                <h3 class="mb-3"><a href="#">Patricia Ordoñez</a></h3>
+                <p class="mb-4">Patricia Ordóñez Castillo es ecóloga, especializada en la interpretación de sensores remotos para levantamientos rurales, educación ambiental y turismo de naturaleza. Actualmente, coordina los proyectos de Reconversión de Sistemas Productivos y Negocios Verdes en la CRC. Es fundadora del Ecodestino Sueño Paraíso – Observatorio Astronómico Francisco José de Caldas, un espacio dedicado a la conservación ambiental y la divulgación científica. Su misión de vida es proteger y preservar el entorno natural del Cauca.</p>
+                <p><a href="https://www.facebook.com/story.php?story_fbid=962394629258991&id=100064653880868&_rdr" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Co-Fundador</div>
-                    <h3 class="mb-3"><a href="#">Patricia Ordoñez</a></h3>
-                    <p class="mb-4">Patricia Ordóñez Castillo es ecóloga, especializada en la interpretación de sensores remotos para levantamientos rurales, educación ambiental y turismo de naturaleza. Actualmente, coordina los proyectos de Reconversión de Sistemas Productivos y Negocios Verdes en la CRC.  Es fundadora del Ecodestino Sueño Paraíso – Observatorio Astronómico Francisco José de Caldas, un espacio dedicado a la conservación ambiental y la divulgación científica. Su misión de vida es proteger y preservar el entorno natural del Cauca, promoviendo un equilibrio entre desarrollo y sostenibilidad.</p>
-                    <p><a href="https://www.facebook.com/story.php?story_fbid=962394629258991&id=100064653880868&_rdr" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/cajas.png" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Co-fundador e Intérprete de Astronomía</div>
-                    <h3 class="mb-3"><a href="#">Sebastián Cajas Ordóñez</a></h3>
-                    <p class="mb-4">Ingeniero Senior en Inteligencia Artificial, enfocado en la aplicación de tecnologías avanzadas para la divulgación científica. Su trabajo en el Observatorio Astronómico Francisco José de Caldas se centra en la aplicación de tecnologías avanzadas para la divulgación científica y la educación. Con un enfoque en la innovación y la accesibilidad, Sebastián busca inspirar a las nuevas generaciones a comprender el potencial de la inteligencia artificial en la exploración y el estudio del universo.</p>
-                    <p><a href="https://sebasmos.github.io/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/alejandro.jpeg" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Intérprete de Astronomía</div>
-                    <h3 class="mb-3"><a href="#">Juan Alejandro Cárdenas</a></h3>
-                    <p class="mb-4">Juan Alejandro Cárdenas es estudiante de Ingeniería de sistemas y divulgador científico. Se desempeña como intérprete en el Observatorio Astronómico Francisco José de Caldas, donde guía actividades de observación y educación astronómica. Su trabajo se enfoca en acercar el conocimiento del universo a la comunidad a través de charlas, eventos y experiencias interactivas.</p>
-                    <p><a href="https://www.linkedin.com/in/juan-alejandro-cardenas-urbano-27ab452b4/?originalSubdomain=co" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/orozco.png" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Intérprete de Astronomía</div>
-                    <h3 class="mb-3"><a href="#">Sebastián Orozco Monje</a></h3>
-                    <p class="mb-4">Juan Sebastián Orozco Monje, ingeniero electrónico apasionado por la astronomía. Su trabajo en el Observatorio Astronómico Francisco José de Caldas en Popayán se centra en la divulgación científica y la educación en astronomía. A través de talleres y observaciones guiadas, busca inspirar a la comunidad a explorar el cielo y comprender mejor el universo. Su compromiso con la ciencia y la tecnología lo convierte en un importante aliado en la promoción del conocimiento astronómico en Colombia..</p>
-                    <p><a href="https://www.unicauca.edu.co/noticias-actualidad/investigadores-unicaucanos-presentan-un-sistema-innovador-de-monitoreo-para-la-fermentacion-del-cafe/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/alejandra.png" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Intérprete de Astronomía</div>
-                    <h3 class="mb-3"><a href="#">Alejandra Guzmán Troya</a></h3>
-                    <p class="mb-4">Alejandra Guzmán Troya es estudiante de medicina, divulgadora científica y aficionada por la astronomía y la medicina espacial. Ejerce como interprete en el Observatorio Astronomico Francisco Jose de Caldas, guiando la observación  astronómica y compartiendo el conocimiento con nuestros visitantes a través de charlas educativas sobre las maravillas del universo.</p>
-                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 d-flex">
-                <div class="post-entry flex-fill">
-                  <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
-                  <div class="body-text">
-                    <div class="category">Personal</div>
-                    <h3 class="mb-3"><a href="#">Edinson</a></h3>
-                    <p class="mb-4">Edinson es un colaborador clave en el desarrollo del ecodestino, destacándose como diseñador y organizador de logística. Su enfoque meticuloso en la planificación y ejecución garantiza el éxito de cada proyecto. Con experiencia en construcción y mantenimiento, Edinson contribuye a crear un espacio sostenible y atractivo para visitantes y la comunidad.</p>
-                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
-        </section><!-- END section -->
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/cajas.png" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Co-fundador e Intérprete de Astronomía</div>
+                <h3 class="mb-3"><a href="#">Sebastián Cajas Ordóñez</a></h3>
+                <p class="mb-4">Ingeniero Senior en Inteligencia Artificial, enfocado en la aplicación de tecnologías avanzadas para la divulgación científica. Su trabajo en el Observatorio Astronómico Francisco José de Caldas se centra en la aplicación de tecnologías avanzadas para la divulgación científica y la educación.</p>
+                <p><a href="https://sebasmos.github.io/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/alejandro.jpeg" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Intérprete de Astronomía</div>
+                <h3 class="mb-3"><a href="#">Juan Alejandro Cárdenas</a></h3>
+                <p class="mb-4">Juan Alejandro Cárdenas es estudiante de Ingeniería de sistemas y divulgador científico. Se desempeña como intérprete en el Observatorio Astronómico Francisco José de Caldas, donde guía actividades de observación y educación astronómica. Su trabajo se enfoca en acercar el conocimiento del universo a la comunidad a través de charlas, eventos y experiencias interactivas.</p>
+                <p><a href="https://www.linkedin.com/in/juan-alejandro-cardenas-urbano-27ab452b4/?originalSubdomain=co" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/orozco.png" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Intérprete de Astronomía</div>
+                <h3 class="mb-3"><a href="#">Sebastián Orozco Monje</a></h3>
+                <p class="mb-4">Juan Sebastián Orozco Monje, ingeniero electrónico apasionado por la astronomía. Su trabajo en el Observatorio Astronómico Francisco José de Caldas en Popayán se centra en la divulgación científica y la educación en astronomía. A través de talleres y observaciones guiadas, busca inspirar a la comunidad a explorar el cielo y comprender mejor el universo.</p>
+                <p><a href="https://www.unicauca.edu.co/noticias-actualidad/investigadores-unicaucanos-presentan-un-sistema-innovador-de-monitoreo-para-la-fermentacion-del-cafe/" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/alejandra.png" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Intérprete de Astronomía</div>
+                <h3 class="mb-3"><a href="#">Alejandra Guzmán Troya</a></h3>
+                <p class="mb-4">Alejandra Guzmán Troya es estudiante de medicina, divulgadora científica y aficionada por la astronomía y la medicina espacial. Ejerce como interprete en el Observatorio Astronómico Francisco José de Caldas, guiando la observación astronómica y compartiendo el conocimiento con nuestros visitantes a través de charlas educativas sobre las maravillas del universo.</p>
+                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/estefany.png" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Personal</div>
+                <h3 class="mb-3"><a href="#">Estefany Lozano</a></h3>
+                <p class="mb-4">Estefany es la directora de marketing del Observatorio Astronómico Francisco José de Caldas. Con una visión creativa y estratégica, lidera las campañas de promoción y divulgación del observatorio, atrayendo a un público diverso. Su enfoque en la colaboración con la comunidad ha fortalecido la imagen del observatorio como un referente en la educación astronómica.</p>
+                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex">
+            <div class="post-entry flex-fill">
+              <img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+              <div class="body-text">
+                <div class="category">Personal</div>
+                <h3 class="mb-3"><a href="#">Edinson</a></h3>
+                <p class="mb-4">Edinson es un colaborador clave en el desarrollo del ecodestino, destacándose como diseñador y organizador de logística. Su enfoque meticuloso en la planificación y ejecución garantiza el éxito de cada proyecto. Con experiencia en construcción y mantenimiento, Edinson contribuye a crear un espacio sostenible y atractivo para visitantes y la comunidad.</p>
+                <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Leer Más</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
+     <!-- Fin Equipo astronomico -->
     
         <section id="historia" class="site-section">
           <div class="container">
@@ -878,8 +917,10 @@
                 <div class="heading-wrap element-animate">
                   <h4 class="sub-heading">Visítanos</h4>
                   <h2 class="heading">Nuestra historia</h2>
-                  <p>El Observatorio Astronómico Francisco José de Caldas en Popayán fue construido en 2013 bajo la dirección de Patricia Ordóñez Castillo. Este espacio fue concebido como un centro de divulgación científica y astronómica para la comunidad, brindando oportunidades de aprendizaje y observación del cielo 
-                  <a href="https://www.radionacional.co/turismo/astronomia-colombia-sueno-paraiso-observatorio-popayan?utm_source=chatgpt.com" style="color: blue;" target="_blank">(ver más en Noticias Radio)</a>.
+                  
+                  <p> El Observatorio Astronómico Francisco José de Caldas en Popayán fue construido en 2013 bajo la dirección de <strong>Patricia Ordóñez Castillo</strong>, una ecóloga con 33 años de experiencia, comprometida con la educación ambiental. Este espacio fue concebido como un centro de divulgación científica y astronómica para la comunidad, brindando oportunidades de aprendizaje y observación del cielo 
+   
+                  <a href="https://www.radionacional.co/turismo/astronomia-colombia-sueno-paraiso-observatorio-popayan" style="color: blue;" target="_blank">(ver más en Noticias Radio)</a>.
                   </p>
         
                   <p>Ubicado en el departamento del Cauca, el observatorio se ha convertido en un punto de referencia para la educación y el turismo astronómico, ofreciendo actividades para familias, colegios y entusiastas de la astronomía.</p>
@@ -896,7 +937,7 @@
         <!-- END section -->
       <!-- Add this section before the footer -->
       <!-- Sección de Podcasts -->
-      <section id="podcasts" class="site-section bg-light">
+      <!-- <section id="podcasts" class="site-section bg-light">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md-12 heading-wrap text-center">
@@ -934,8 +975,8 @@
             </div>
           </div>
         </div>
-      </section>
-
+      </section> -->
+<!-- 
       <style>
       .audio-player {
         margin-top: 20px;
@@ -970,8 +1011,8 @@
         background-color: #31708E;
         color: white;
       }
-      </style>
-
+      </style> -->
+<!-- 
       <script>
       document.addEventListener('DOMContentLoaded', function() {
         const audio = document.getElementById('podcastAudio');
@@ -1025,11 +1066,9 @@
           progressBar.style.width = '0%';
           audio.currentTime = 0;
         });
-      });
+      }); -->
       </script>
           
-
-
         <footer class="site-footer">
           <div class="container">
             <div class="row mb-5">
