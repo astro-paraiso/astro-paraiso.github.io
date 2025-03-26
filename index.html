@@ -159,82 +159,6 @@
             </div>
           </div>
         
-          <style>
-            .site-hero {
-              position: relative;
-              min-height: 100vh;
-              width: 100%;
-              overflow: hidden;
-              background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-            }
-        
-            .site-hero::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background-image: url(gallery/landscape3.png);
-              background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-            }
-            .site-hero .overlay {
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: rgba(0, 0, 0, 0.5);
-            }
-        
-        
-        
-            .site-hero .container {
-              position: relative;
-              z-index: 2;
-              height: 100vh;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-        
-            .site-hero-inner {
-              max-width: 1200px;
-              margin: 0 auto;
-              padding: 0 20px;
-            }
-        
-            .site-hero h1 {
-              font-size: 2.5rem;
-              margin-bottom: 1rem;
-            } 
-            /* Media queries para dispositivos móviles */
-            @media (max-width: 768px) {
-              .site-hero {
-                background-image: url(gallery/im8.png) !important; /* Override el estilo inline */
-              }
-        
-              .site-hero h1 {
-                font-size: 2rem;
-                padding: 0 15px;
-              }
-        
-              .site-hero-inner {
-                padding: 0 15px;
-              }
-            }
-        
-            /* Media queries para tablets */
-            @media (min-width: 769px) and (max-width: 1024px) {
-              .site-hero h1 {
-                font-size: 2.25rem;
-              }
-            }
-          </style>
         </section>
 
         <section class="site-section">
@@ -242,19 +166,32 @@
             <div class="row align-items-center">
               <div class="col-md-4 text-center">
                 <div class="heading-wrap element-animate">
-                  <h4 class="sub-heading">Visita El Observatorio Astronómico Francisco José de Caldas</h4>
-                  <h2 class="heading">Vive y disfruta</h2>
-                  <p class="mb-5">¿Eres de las personas que siempre soñaron con ver el cielo y sentir que se puede tocar las estrellas?  ¿cuántas veces dirigiste la mirada al firmamento, para deleitarte con los colores y las formas de mundos desconocidos y lejanos, buscando experimentar y sentir la vida más cerca del espacio y sus maravillas?</p>
+                  <h4 class="sub-heading" style="font-size: 1.3rem;">Visita El Observatorio Astronómico Francisco José de Caldas</h4>
+                  <h2 class="heading" style="font-size: 3rem;">Vive y disfruta</h2>
+                  <p class="mb-5" style="font-size: 1.3rem;">¿Eres de las personas que siempre soñaron con ver el cielo y sentir que se puede tocar las estrellas?  ¿cuántas veces dirigiste la mirada al firmamento, para deleitarte con los colores y las formas de mundos desconocidos y lejanos, buscando experimentar y sentir la vida más cerca del espacio y sus maravillas?</p>
                   <p><a href="#catalogo" class="btn btn-primary btn-sm">Nuestros planes</a></p>
                 </div>
               </div>
+
               <div class="col-md-1 d-none d-md-block"></div> <!-- Espacio extra en pantallas grandes -->
               <div class="col-md-7">
+
                 <img src="images/IM2.png" alt="Observatorio" class="img-fluid w-100">
               </div>
+
+              </div>
+
+          
             </div>
-          </div>
-        </section>
+            <style>
+              /* Reduce or remove left padding inside #historia .container */
+              #historia .container {
+                padding-left: 0 !important;
+              }
+            </style>
+          
+          </section>
+
         <!-- END section -->
 
          <!-- START CATALOGO section -->
@@ -578,7 +515,7 @@
 <!--==========================
      Events Section
    ============================-->
-   <section class="site-hero site-hero-innerpage overlay d-flex align-items-center" data-stellar-background-ratio="1" style="background-image: url(images/big_image_1.png); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+   <section class="site-hero site-hero-innerpage overlay d-flex align-items-center" data-stellar-background-ratio="1" style="background-image: url(images/big_image_1.png); background-size: cover; background-position: center; min-height: 40vh; display: flex; align-items: center; justify-content: center;">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-md-8 d-flex flex-column align-items-center">
@@ -907,7 +844,7 @@
     /* Estilos para la sección de video */
     .video-section {
       position: relative;
-      min-height: 500px;
+      min-height: 800px;
       margin-top: 80px;
       padding: 100px 0;
       overflow: hidden;
@@ -1022,7 +959,6 @@
       <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h4 class="sub-heading">Nuestro equipo</h4>
             <h2 class="heading">Nuestro equipo Astronómico</h2>
           </div>
         </div>
@@ -1157,31 +1093,62 @@
 
 
      <!-- Fin Equipo astronomico -->
+     <section id="historia" class="site-section">
+      <div class="container-fluid">
+        <div class="row align-items-center no-gutters">
+          
+          <div class="col-md-4">
+            <div class="heading-wrap element-animate">
+              <h4 class="sub-heading">Visítanos</h4>
+              <h2 class="heading">Nuestra historia</h2>
+              <p style="font-size: 1.1rem;">
+                El Ecodestino Sueño Paraíso - Observatorio Astronómico Francisco José de Caldas, 
+                ubicado en Popayán, surgió gracias a líderes ambientales que inspiraron con su ejemplo 
+                a la ecóloga <strong>Patricia Ordóñez Castillo</strong> desde el año 2013. Con 33 años 
+                de trayectoria, ha trabajado firmemente en educación ambiental y turismo de naturaleza. 
+                Junto a su hijo Sebastián Andrés Cajas, ingeniero electrónico, han impulsado la difusión 
+                de las ciencias astronómicas, resaltando la relevancia del planeta Tierra en el universo.
+              </p>
     
-        <section id="historia" class="site-section">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <div class="heading-wrap element-animate">
-                  <h4 class="sub-heading">Visítanos</h4>
-                  <h2 class="heading">Nuestra historia</h2>
-                  
-                  <p> El Observatorio Astronómico Francisco José de Caldas en Popayán fue construido en 2013 bajo la dirección de <strong>Patricia Ordóñez Castillo</strong>, una ecóloga con 33 años de experiencia, comprometida con la educación ambiental. Este espacio fue concebido como un centro de divulgación científica y astronómica para la comunidad, brindando oportunidades de aprendizaje y observación del cielo 
-   
-                  <a href="https://www.radionacional.co/turismo/astronomia-colombia-sueno-paraiso-observatorio-popayan" style="color: blue;" target="_blank">(ver más en Noticias Radio)</a>.
-                  </p>
-        
-                  <p>Ubicado en el departamento del Cauca, el observatorio se ha convertido en un punto de referencia para la educación y el turismo astronómico, ofreciendo actividades para familias, colegios y entusiastas de la astronomía.</p>
-        
-                  <p>Desde su inauguración, ha sido un lugar clave para la promoción del conocimiento astronómico en la región, organizando eventos y observaciones guiadas para el público en general. Además, el observatorio es un aliado estratégico de <a href="https://fiet.unicauca.edu.co/aess/" style="color: blue;" target="_blank">AESS Unicauca</a>.</p>
-                </div>
-              </div>
-              <div class="col-md-7 d-flex justify-content-center">
-                <img src="gallery/karen.png" alt="Image placeholder" class="img-fluid w-75">
-              </div>
+              <p style="font-size: 1.1rem;">
+                Este espacio funciona como un centro de tecnología y divulgación científica, tanto 
+                ambiental como astronómica, brindando experiencias educativas y oportunidades para 
+                observar el cielo 
+                <a href="https://www.radionacional.co/turismo/astronomia-colombia-sueno-paraiso-observatorio-popayan" 
+                   style="color: blue;" target="_blank">
+                   (ver más en Noticias Radio)
+                </a>.
+              </p>
+    
+              <p style="font-size: 1.1rem;">
+                Ubicado en el departamento del Cauca, el observatorio se ha consolidado como un referente 
+                para la educación y el turismo astronómico, ofreciendo actividades diseñadas para familias, 
+                colegios y aficionados a la astronomía.
+              </p>
+    
+              <p style="font-size: 1.1rem;">
+                Es además un espacio clave en el turismo de naturaleza y el astroturismo, organizando eventos 
+                y observaciones guiadas para públicos diversos. El observatorio también colabora como aliado 
+                estratégico de AESS UNICAUCA. 
+                <a href="https://fiet.unicauca.edu.co/aess/" style="color: blue;" target="_blank">
+                  AESS Unicauca
+                </a>.
+              </p>
+
+              <p>
+                <a href="blog.html" class="btn btn-primary btn-sm">
+                  Leer historia completa
+                </a>
+              </p>
             </div>
           </div>
-        </section>
+          
+          <div class="col-md-7 d-flex justify-content-center">
+            <img src="gallery/karen.png" alt="Image placeholder" class="img-fluid w-75">
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   
@@ -1361,23 +1328,12 @@
               </div>
               <div class="col-md-4">
                 <h3>Contáctanos</h3>
-                <p>Estamos en todas las redes sociales, Síguenos!</p>
+                <p>Estamos en todas las redes sociales, ¡Síguenos!</p>
                 <p>
                   <a href="https://www.instagram.com/astroparaiso" class="p-3"><span class="fa fa-instagram"></span></a>
                   <a href="https://www.facebook.com/astroparaiso" class="pl-0 p-3"><span class="fa fa-facebook"></span></a>
-                  
+                  <a href="https://www.tiktok.com/@astroparaiso" class="p-3"><span class="fa fa-music"></span></a>
                 </p>
-              </div>
-              <div class="col-md-4">
-                <h3>Contáctanos</h3>
-                <p>Envianos un correo</p>
-                <form action="#" class="subscribe">
-                  <div class="form-group">
-                    <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
-                    <input type="email" class="form-control" placeholder="escribe tu correo para futuros eventos">
-                  </div>
-                  
-                </form>
               </div>
             </div>
             <div class="row justify-content-center">

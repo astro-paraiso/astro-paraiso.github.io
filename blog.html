@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>astroparaiso</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS File -->
+    <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Libraries CSS Files -->
+    <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="lib/animate/animate.min.css" rel="stylesheet">-->
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Add this right after the opening <body> tag -->
+    <audio id="welcomeSound" autoplay>
+      <source src="sounds/podcast-observatorio-aess.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Add this script just before the closing </body> tag -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('welcomeSound');
+
+        // Attempt to play audio automatically
+        audio.play().catch(function(error) {
+          // Handle autoplay restrictions
+          console.log('Autoplay prevented: ', error);
+
+          // Optional: Add a button to let users start audio
+          var playButton = document.createElement('button');
+          playButton.textContent = 'Play Welcome Sound';
+          playButton.style.position = 'fixed';
+          playButton.style.bottom = '20px';
+          playButton.style.right = '20px';
+          playButton.style.zIndex = '1000';
+          playButton.onclick = function() {
+            audio.play();
+            document.body.removeChild(playButton);
+          };
+          document.body.appendChild(playButton);
+        });
+      });
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="/Users/sebasmos/Desktop/astronomiaparaiso/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Venobox JS -->
+    <!-- <script src="path/to/venobox.min.js"></script> -->
+
+    <script>
+      $(document).ready(function() {
+        $('.eventos-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+        });
+
+        // Initialize Venobox
+        $('.venobox').venobox();
+      });
+    </script>
+
+    <header role="banner">
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/astroparaiso.png" alt="Astroparaiso Logo" class="logo">
+            Astroparaiso
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item cta">
+                <a class="nav-link" href="https://wa.me/573122432974"><span>Reserve ahora</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <!-- Hero Section -->
+    <section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5" style="background-image: url(gallery/gr.aviturismo.png);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="mb-5 element-animate">
+              <h1>Popayán 26 de marzo de 2025</h1>
+              <p>Historia - Ecodestino Sueño Paraíso</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END hero section -->
+
+    <!-- Blog content section -->
+    <section id="blog-content" class="site-section">
+      <div class="container">
+        <h2>ECODESTINO “SUEÑO PARAÍSO”: UNA VISIÓN DE PROTECCIÓN AMBIENTAL Y ASTRONOMÍA</h2>
+        <!-- <p><strong></strong><br> -->
+        Ecodestino “Sueño Paraíso” es una entidad que se proyecta en la ciudad de Popayán como la mejor oportunidad para vivenciar procesos de protección al ambiente y el estudio y difusión de la astronomía. Se trata de un centro educativo en el campo como propuesta, al mejoramiento de la calidad de vida, y brindar alternativas frente al cambio climático planetario. 
+        En este sentido se ofrecen servicios de aprendizaje práctico, como una gran oportunidad de afianzar conocimientos en forma eficiente y proyectar el relacionamiento armónico con la naturaleza y el desarrollo económico sostenible, considerando la posición geográfica que representa el departamento del Cauca y su biodiversidad, como oportunidad para la vida.</p>
+
+        <h2>OBJETIVOS PRINCIPALES</h2>
+        <p>
+          Posicionar un destino de naturaleza, como un centro demostrativo innovador y competitivo en el mercado, con valor agregado y una propuesta diferenciadora a nivel empresarial contribuyendo a la formación integral de comunidades educativas y visitantes, del municipio de Popayán.
+        </p>
+
+        <h2>JUSTIFICACIÓN: CREAR ESPACIOS PARA EL APRENDIZAJE AMBIENTAL</h2>
+        <p>
+          El departamento del Cauca, cuenta con muy pocas instituciones público y/o privadas dedicadas al estudio y difusión de la Astronomía o ciencias afines, a su vez, es muy baja la oportunidad de contar con espacios naturales demostrativos, dedicados a la educación ambiental, en donde niños, jóvenes y adultos puedan vivenciar un contacto con la naturaleza y el universo, teniendo la oportunidad del aprendizaje por medio de la recreación, la cultura y la ocupación del tiempo libre, en un lugar cercano a la ciudad de Popayán.
+        </p>
+        <p>
+          El Ecodestino Sueño Paraíso-observatorio astronómico Francisco José de Caldas, ha aunado esfuerzos técnicos, humanos, logísticos, económicos y alianzas estratégicas interinstitucionales, para posicionar el único observatorio astronómico en el Departamento del Cauca que ofrece, programas, cursos de astronomía y aspectos ambientales dirigidos a comunidades educativas, grupos de adultos y turistas, considerando que el entorno ambiental, requiere de acciones eficientes y eficaces, que sean un ejemplo en la práctica y rompan con acciones aisladas, inapropiadas, desarticuladas y descontextualizadas que se han realizado hasta el momento. De esta manera se logra sensibilizar a los visitantes sobre el cuidado del ambiente y ser conscientes del impacto que puede tener fenómenos como el cambio climático global en el planeta tierra. Por lo anterior se hace necesario, fortalecer espacios dedicados a generar turismo de naturaleza que integren la astronomía, como una propuesta innovadora, diferenciadora, de alto valor agregado, competitiva a nivel empresarial y además que genere empleo formal, mejorando el bienestar y la calidad de vida de los habitantes.
+        </p>
+
+        <h2>INNOVACIÓN Y SUSTENTABILIDAD</h2>
+        <p>
+          Se trata de una modalidad que además de prestar mayor preocupación con las técnicas de manejo y límites de carga que aseguren la sustentabilidad ambiental, permite la transmisión de información de interés a los turistas sobre los ambientes visitados.
+        </p>
+        <p>
+          El Ecodestino Sueño Paraíso propone un modelo nuevo de recreación, esparcimiento y ocupación del tiempo libre mediante un proceso de aprendizaje innovador, masivo, económico y efectivo el cual promueve productos y/o servicios que integran conocimientos integrales que operan en el municipio de Popayán. El componente innovador de la empresa se refleja en ser un medio que ofrece el conocimiento de la Astronomía y el conocimiento de la naturaleza, usando tecnológico no convencional en la ciudad de Popayán, pues contará inicialmente con 10 pantallas en 10 busetas del servicio público con pautas que serán entregadas a los espectadores con excelente calidad de imagen (HD) y sonido los siete días de la semana en horario de 6 am a 9 pm en jornada continua, adicional a esto contribuirá al mejoramiento de la calidad de vida a través de la preservación del medio ambiente.
+        </p>
+
+        <h2>UN POCO DE HISTORIA: UNA VISIÓN QUE NACIÓ DEL CAMPO</h2>
+        <p>
+          En el recorrido por esta vida y con la oportunidad de ser Educadora ambiental mi mayor anhelo fue salir de la ciudad y hacer de nuestro hogar un Centro educativo para la comunidad de Colombia y el Planeta, integrando a mis hijos como punto de partida para una vivencia con el entorno natural.
+        </p>
+        <p>
+          La oportunidad que me ha brindado el trabajo que desempeño desde hace 33 años como ecóloga y el haber conocido tantas personas extraordinarias del campo que tienen experiencias significativas admirables y reconociendo en vivo y directo el deterioro ambiental de: suelos, agua, fauna, vegetación y del mismo hombre que esta sucediendo en el entorno, me obligo a proyectar esta iniciativa ambiental y cultural, de beneficio a la humanidad con el fin de aportarle a la vida un pedacito de vida. Así mismo he aprendido que la mejor oportunidad para consolidar procesos de protección al ambiente es por medio del ejemplo.
+        </p>
+        <p>
+          Desde hace 20 años empecé con mis dos hijos a construir el espacio de Sueño Paraíso en la vereda Santa Ana, donde he organizado un sendero ecológico organizado en estaciones orientadas a generar alternativas frente a la adaptación de cambio climático, para interactuar con los visitantes y aportar a la restauración ambiental y el manejo adecuado del ambiente y consolidar un centro educativo en el campo, que incluye prácticas sencillas y claras, pero que tienen un impacto en la calidad del ambiente. Con ello se pretende conseguir que muchas pequeñas acciones puedan producir grandes resultados, tanto por efecto acumulador como sinérgico.
+        </p>
+        <p>
+          La propuesta ha generado la oportunidad de trabajar individualmente y en equipo con los vecinos de la vereda y amigos, para la búsqueda de soluciones a los problemas actuales y más recientes en un inicio desde la finca, como centro demostrativo para la vereda, corregimiento, municipio, departamento y planeta.
+        </p>
+        <p>
+          Desde el 2015 se construyó el observatorio astronómico, el cual se ha dedicado al conocimiento del Cosmos. Desde ese entonces y hasta la actualidad recibimos visitantes niños y adultos, y nuestra satisfacción es lograr a más estudiantes masificando el conocimiento del cosmos.
+        </p>
+        <p>
+          La primera Institución educativa que nos visitó fue El Gabriela Mistral, que después ganó Premio Ondas por tener este aspecto inmerso en su currículo.
+        </p>
+        <p>
+          Como fruto del esfuerzo y el trabajo constante, el Ecodestino sueño paraíso ha obtenido importantes logros como la acogida de la comunidad caucana, el reconocimiento y aceptación en colegios y universidades, ha recibido propuestas de negocios con entidades e instituciones educativas, reconocimientos en los medios de comunicación y disposición de estos de difundir la propuesta.
+        </p>
+        <p>
+          En el 2020 el Hijo menor Sebastián Cajas Ordoñez fundó con otros estudiantes la organización AESSUNICAUCA el cual reúne jóvenes estudiantes de la universidad que están orientados a la investigación, gestión y generar actividades en torno a las ciencias de la tierra, naturales, sociales y aeroespaciales al nivel nacional e internacional.
+        </p>
+
+      </div>
+    </section>
+    <!-- END blog content section -->
+
+    <section class="section-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/img_5.jpg);">
+      <div class="container">
+        <div class="row justify-content-center align-items-center intro">
+          <div class="col-md-9 text-center element-animate">
+            <h2>Nuestra historia en Spotify</h2>
+            <a
+              href="https://open.spotify.com/episode/0iOwuq3IuMhkrVfm39wLYY?si=LwUtuH1URtOhW7dIxqXatA"
+              class="btn btn-primary mt-3"
+              target="_blank"
+            >
+              Escuchar en Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END optional cover section -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3>Phone Support</h3>
+            <p>24/7 Contáctanos</p>
+            <p class="lead"><a href="tel://">3122432974</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Contáctanos</h3>
+            <p>Estamos en todas las redes sociales, ¡Síguenos!</p>
+            <p>
+              <a href="https://www.instagram.com/astroparaiso" class="p-3"
+                ><span class="fa fa-instagram"></span
+              ></a>
+              <a
+                href="https://www.facebook.com/astroparaiso"
+                class="pl-0 p-3"
+                ><span class="fa fa-facebook"></span
+              ></a>
+              <a href="https://www.tiktok.com/@astroparaiso" class="p-3"
+                ><span class="fa fa-music"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            &copy;
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright
+            &copy;<script>document.write(new Date().getFullYear());</script>
+            All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a href="#" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#f4b214"
+        />
+      </svg>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
